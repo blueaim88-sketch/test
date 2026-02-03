@@ -1,1 +1,79 @@
-/* Add styles here */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.lotto-machine {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.numbers-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 80px;
+    margin-bottom: 2rem;
+}
+
+.lotto-ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: inset -3px -3px 5px rgba(0,0,0,0.2);
+}
+
+/* Color ranges for lotto balls */
+.ball-color-1 { background-color: #fbc400; } /* 1-10 */
+.ball-color-2 { background-color: #69c8f2; } /* 11-20 */
+.ball-color-3 { background-color: #ff7272; } /* 21-30 */
+.ball-color-4 { background-color: #aaa; }    /* 31-40 */
+.ball-color-5 { background-color: #b0d840; } /* 41-45 */
+
+.generate-btn {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.generate-btn:hover {
+    background-color: #434190;
+}
+
+.generate-btn:active {
+    transform: scale(0.98);
+}
