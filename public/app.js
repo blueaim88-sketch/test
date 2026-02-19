@@ -588,11 +588,11 @@ function adSlot(slotId, lang = "ko") {
   const isKo = lang !== "en";
   return el("div", { class: "card ad-slot", "data-ad-slot": slotId }, [
     el("div", {}, [
-      el("div", { class: "ad-label" }, [isKo ? "광고 영역" : "Ad Slot"]),
+      el("div", { class: "ad-label" }, [isKo ? "안내" : "Note"]),
       el("div", { class: "ad-copy" }, [
         isKo
-          ? `Google AdSense 코드 삽입 위치 (${slotId})`
-          : `Insert Google AdSense code here (${slotId})`
+          ? "광고는 페이지 흐름을 해치지 않는 위치에서 자동으로 노출될 수 있습니다."
+          : "Ads may be shown automatically in non-disruptive positions."
       ])
     ])
   ]);
